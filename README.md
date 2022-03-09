@@ -1,14 +1,14 @@
-1 DESCRIÇÃO
+## 1 DESCRIÇÃO
 A classe e métodos do arquivo bet365.py geram uma busca no site de apostas de futebol, 'https://www.bet365.com/#/IP/B1',
 e nos retornam quais os jogos e o placar por partida que estão ocorrendo no momento. Para isso, cria-se um bot com selenium 
 que faz um request e repassa para o beautifulsoup, para que este possa fazer a varredura e encontrar os valores pretendidos.
 
-2 OPCIONAL
+## 2 OPCIONAL</strong><br>
 Adicionalmente cria-se com o pyinstaller um executável, que fará todo o processo apenas executando o arquivo, 
 garanta que o chromedrive.exe esteja na mesma pasta do arquivo executável.
 
 
-3 REQUISITOS
+## 3 REQUISITOS</strong><br>
 	Usar no seu terminal: pip install -r Requeriments.txt
 
 
@@ -18,14 +18,14 @@ garanta que o chromedrive.exe esteja na mesma pasta do arquivo executável.
 
 
 
-4 - TRANSFORMANDO EXECUTÁVEL
+## 4 - TRANSFORMANDO EXECUTÁVEL
 
 Transformando em .exe:
 No seu terminal na pasta do arquivo "exemplo.py" você deve executar a linha:
 
 pyinstaller --noconsole --name="AoVivo" --icon="pyi.ico"  --add-data="pyi.ico;." --add-binary=".\chromedriver.exe;." --onefile bet365.py
 
-4.1 Dicionário do pyinstaller:
+### 4.1 Dicionário do pyinstaller:
 - noconsole: não exibe o console ao clicar no executável;
 - name: Nome do arquivo gerado no .exe;
 - icon: imagem em formato de icone para o executável;
@@ -33,19 +33,19 @@ pyinstaller --noconsole --name="AoVivo" --icon="pyi.ico"  --add-data="pyi.ico;."
 - add-binary:  arquivo binário inserido ao .exe;
 - onefile: arquivo a ser gerado do .py.
 
-4.2 Arquivos/Pastas Geradas pelo pyinstaller:
+### 4.2 Arquivos/Pastas Geradas pelo pyinstaller:
 
 build/
 dist/
 AoVivo.spec
 
-4.3 Como usar o executável:
+## 4.3 Como usar o executável:
 
 Entre na pasta dist/ e execute o arquivo AoVivo.exe
 Garanta que o arquivo chromedriver.exe esteja junto
 	
 
-5 DOCUMENTAÇÃO REFERENCIAL E DOWNLOADS DO DRIVER:
+## 5 DOCUMENTAÇÃO REFERENCIAL E DOWNLOADS DO DRIVER:
 
  - Selenium: https://selenium-python.readthedocs.io/
  - Chrome Driver: https://chromedriver.chromium.org/downloads
